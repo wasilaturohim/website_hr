@@ -1,0 +1,40 @@
+#chart {
+    width: 600px;
+    height: 500px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.label {
+    font-size: 14px;
+    color: #888;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.spacer {
+    margin-right: 2px;
+}
+
+h1 {
+    color: #a74040;
+    margin-top: 40px;
+}
+
+
+#clock {
+    font-size: 20px;
+    color: #020202;
+    margin-top: 10px;
+    float: right;
+}
+
+#date {
+    font-size: 20px;
+    color: #050505;
+    margin-top: 10px;
+    float: right;
+}

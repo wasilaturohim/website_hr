@@ -1,0 +1,95 @@
+ /* Reset CSS */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: Arial, sans-serif;
+     line-height: 1.6;
+ }
+
+ /* Header */
+ header {
+     background-color: #333;
+     color: #fff;
+     text-align: center;
+     padding: 20px;
+ }
+
+ h1 {
+     font-size: 24px;
+ }
+
+ /* Main Content */
+ .container {
+     max-width: 800px;
+     margin: 20px auto;
+     padding: 20px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+     background-color: #fff;
+ }
+
+ h2 {
+     font-size: 20px;
+     margin-bottom: 10px;
+ }
+
+ p {
+     margin-bottom: 10px;
+ }
+
+ ul {
+     margin-bottom: 10px;
+ }
+
+ li {
+     margin-bottom: 5px;
+ }
+
+ /* Icon */
+ .icon {
+     display: inline-block;
+     margin-right: 5px;
+ }
+
+ .container {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .left-column {
+     width: 50%;
+ }
+
+ .right-column {
+     width: 50%;
+     padding-left: 50px;
+ }
+
+ .profile-photo {
+     max-width: 200px;
+     max-height: 200px;
+     margin-bottom: 20px;
+ }
+
+ .edit-link {
+     margin-top: auto;
+     text-align: center;
+ }
+
+ .hide-icon {
+     display: none;
+ }
+
+ .icon-container {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+ }
+
+ .icon-container a {
+     margin-left: 10px;
+ }

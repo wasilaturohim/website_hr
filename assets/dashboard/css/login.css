@@ -1,0 +1,139 @@
+body {
+  background-image: url("https://www.androidponsel.com/wp-content/uploads/2020/12/Logo-Telkom-Indonesia-1536x864.jpg");
+  background-size: cover;
+  background-position: center
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.login-form {
+  background-color: #f5f5f5;
+  padding: 90px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.login-form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e63838;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 100px;
+  background-color: transparent;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links a:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.logo img {
+  width: 180px;
+  height: 100px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #333333;
+  transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    position: fixed;
+    right: 5px;
+    height: 100vh;
+    top: 80px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+.line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.line2 {
+  opacity: 0;
+}
+
+.line3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}

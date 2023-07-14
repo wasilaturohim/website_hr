@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cascading KPI Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css">
+</head>
+<body>
+  <h2>SALES</h2>
+
+  <!-- Product Sales -->
+  <h3>Product Sales</h3>
+  <select id="product-select" onchange="updateChart()">
+    <option value="indibiz">IndiBiz</option>
+    <option value="pijar">PIJAR</option>
+    <option value="mysooltan">MySooltan</option>
+  </select>
+
+  <!-- Chart -->
+  <canvas id="sales-chart"></canvas>
+
+  <!-- Personality -->
+  <h3>Personality</h3>
+  <select id="personality-select" onchange="showPersonality()">
+    <option value="">Select Personality</option>
+    <option value="personality1">Personality 1</option>
+    <option value="personality2">Personality 2</option>
+    <option value="personality3">Personality 3</option>
+  </select>
+
+  <!-- Personality Details -->
+  <div id="personality-details"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
