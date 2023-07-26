@@ -34,6 +34,14 @@
 				</div>
 			</div>
 
+            <div class="form-group row">
+				<label class="col-sm-2 col-form-label">Id Telegram</label>
+				<div class="col-sm-6">
+					<input type="text" class="form-control" id="id_telegram" name="id_telegram" value="<?php echo $data_cek['id_telegram']; ?>"
+					/>
+				</div>
+			</div>
+
 			<div class="form-group row">
 				<label class="col-sm-2 col-form-label">Password</label>
 				<div class="col-sm-6">
@@ -76,6 +84,7 @@
     $sql_ubah = "UPDATE tb_pengguna SET
         nama_pengguna='".$_POST['nama_pengguna']."',
         username='".$_POST['username']."',
+        id_telegram='".$_POST['id_telegram']."',
         password='".$_POST['password']."',
         level='".$_POST['level']."'
         WHERE id_pengguna='".$_POST['id_pengguna']."'";

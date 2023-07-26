@@ -1,6 +1,6 @@
 <?php
   include "inc/koneksi.php";
-   
+  include "inc/telegram_bot.php";
 ?>
 
 <!DOCTYPE html>
@@ -88,41 +88,58 @@
 </html>
 
 <?php
-
-
-
-
+session_start();
 
 if (isset($_POST['btnLogin'])) {  
-	//anti inject sql
-	$username=mysqli_real_escape_string($koneksi,$_POST['username']);
-	$password=mysqli_real_escape_string($koneksi,$_POST['password']);
+    // anti inject sql
+    $username = mysqli_real_escape_string($koneksi, $_POST['username']);
+    $password = mysqli_real_escape_string($koneksi, $_POST['password']);
 
-	//query login
-	$sql_login = "SELECT * FROM tb_pengguna WHERE BINARY username='$username' AND password='$password'";
-	$query_login = mysqli_query($koneksi, $sql_login);
-	$data_login = mysqli_fetch_array($query_login,MYSQLI_BOTH);
-	$jumlah_login = mysqli_num_rows($query_login);
+    // query login
+    $sql_login = "SELECT * FROM tb_pengguna WHERE BINARY username='$username' AND password='$password'";
+    $result = mysqli_query($koneksi, $sql_login);
+    if (mysqli_num_rows($result) > 0) {
+        $data_login = mysqli_fetch_assoc($result);
 
-
-	if ($jumlah_login ==1 ){
-		session_start();
+        // Simpan data pengguna ke session
+        // $_SESSION['username'] = $user['username'];
+        // $_SESSION['nama_pengguna'] = $user['nama_pengguna'];
+        // $_SESSION['id_telegram'] = $user['id_telegram'];
 		$_SESSION["ses_id"]=$data_login["id_pengguna"];
 		$_SESSION["ses_nama"]=$data_login["nama_pengguna"];
 		$_SESSION["ses_username"]=$data_login["username"];
 		$_SESSION["ses_password"]=$data_login["password"];
 		$_SESSION["ses_level"]=$data_login["level"];
-	
-		echo "<script>
-			Swal.fire({title: 'Login Berhasil',text: '',icon: 'success',confirmButtonText: 'OK'
-			}).then((result) => {if (result.value)
-				{window.location = 'index.php';}
-			})</script>";
-		}else{
-		echo "<script>
-			Swal.fire({title: 'Login Gagal',text: '',icon: 'error',confirmButtonText: 'OK'
-			}).then((result) => {if (result.value)
-				{window.location = 'login.php';}
-			})</script>";
-		}
-		}
+        $_SESSION['ses_id_telegram'] = $data_login['id_telegram'];
+
+        function generateOTP() {
+            $otpLength = 6;
+            $otp = '';
+
+            // Membangkitkan OTP acak dengan angka dari 0 hingga 9
+            for ($i = 0; $i < $otpLength; $i++) {
+                $otp .= mt_rand(0, 9);
+            }
+
+            return $otp;
+        }
+
+        // Menghasilkan OTP
+        $otp = generateOTP();
+
+        // Menyimpan OTP ke dalam database
+        $sql_update = "UPDATE tb_pengguna SET kode_otp = '$otp' WHERE username = '$username'";
+        mysqli_query($koneksi, $sql_update);
+
+        // Mengirim OTP melalui bot Telegram
+        kirimOTPviaTelegram($data_login['id_telegram'], $otp);
+
+        // Redirect ke halaman verifikasi OTP
+        header("Location: verifikasi_otp.php");
+        exit();
+    } else {
+        $error_msg = "Username atau password salah.";
+    }
+}
+?>
+

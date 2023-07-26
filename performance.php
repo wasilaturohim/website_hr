@@ -185,7 +185,7 @@ while ($data = $sql->fetch_assoc()) {
 							<!-- Earnings (Monthly) Card Example -->
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=SHARED SERVICE OPERATION';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">SHARED SERVICE OPERATION
@@ -212,7 +212,7 @@ while ($data = $sql->fetch_assoc()) {
 							<!-- Total Karyawan Card Example -->
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=CONSUMER SERVICE';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">CONSUMER SERVICE
@@ -239,7 +239,7 @@ while ($data = $sql->fetch_assoc()) {
 							<!-- Earnings (Monthly) Card Example -->
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=LOGISTIK AND GENERAL SUPPORT';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">LOGISTIK & GENERAL SUPPORT
@@ -266,7 +266,7 @@ while ($data = $sql->fetch_assoc()) {
 							<!-- Pending Requests Card Example -->
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=ACCESS, OPTIMA, DATA, AND MAINTENANCE';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">ACCESS, OPTIMA, DATA & MAINTENANCE
@@ -292,7 +292,7 @@ while ($data = $sql->fetch_assoc()) {
 
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=HEAD OF REPRESENTATIVE OFFICE';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">HEAD OF REPRESENTATIVE OFFICE
@@ -318,7 +318,7 @@ while ($data = $sql->fetch_assoc()) {
 
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=BUSINESS, GOVT, AND ENTERPRISE SERVICE';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">BUSINESS, GOVT & ENTERPRISE SERVICE
@@ -344,7 +344,7 @@ while ($data = $sql->fetch_assoc()) {
 
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=ENGINE GROUP';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">ENGINE GROUP
@@ -370,7 +370,7 @@ while ($data = $sql->fetch_assoc()) {
 
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=NETWORK AREA AND IS OPERATION';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">NETWORK AREA & IS OPERATION
@@ -396,7 +396,7 @@ while ($data = $sql->fetch_assoc()) {
 
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=CUSTOMER CARE';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">CUSTOMER CARE
@@ -422,7 +422,7 @@ while ($data = $sql->fetch_assoc()) {
 
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=OPERATION BGES, WAN, AND WIFI';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">OPERATION BGES, WAN & WIFI
@@ -448,7 +448,7 @@ while ($data = $sql->fetch_assoc()) {
 
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=ACCESS SERVICE OPERATION';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">ACCESS SERVICE OPERATION
@@ -474,7 +474,7 @@ while ($data = $sql->fetch_assoc()) {
 
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=WARROOM';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">WARROOM
@@ -534,7 +534,7 @@ while ($data = $sql->fetch_assoc()) {
 							<!-- Earnings (Monthly) Card Example -->
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=SHARED SERVICE OPERATION';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">SHARED SERVICE OPERATION
@@ -561,7 +561,7 @@ while ($data = $sql->fetch_assoc()) {
 							<!-- Total Karyawan Card Example -->
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=CONSUMER SERVICE';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">CONSUMER SERVICE
@@ -588,7 +588,7 @@ while ($data = $sql->fetch_assoc()) {
 							<!-- Earnings (Monthly) Card Example -->
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=LOGISTIK AND GENERAL SUPPORT';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">LOGISTIK & GENERAL SUPPORT
@@ -615,7 +615,7 @@ while ($data = $sql->fetch_assoc()) {
 							<!-- Pending Requests Card Example -->
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=ACCESS, OPTIMA, DATA, AND MAINTENANCE';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">ACCESS, OPTIMA, DATA & MAINTENANCE
@@ -641,7 +641,7 @@ while ($data = $sql->fetch_assoc()) {
 
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=HEAD OF REPRESENTATIVE OFFICE';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">HEAD OF REPRESENTATIVE OFFICE
@@ -667,7 +667,7 @@ while ($data = $sql->fetch_assoc()) {
 
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=BUSINESS, GOVT, AND ENTERPRISE SERVICE';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">BUSINESS, GOVT & ENTERPRISE SERVICE
@@ -693,7 +693,7 @@ while ($data = $sql->fetch_assoc()) {
 
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=ENGINE GROUP';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">ENGINE GROUP
@@ -719,7 +719,7 @@ while ($data = $sql->fetch_assoc()) {
 
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=NETWORK AREA AND IS OPERATION';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">NETWORK AREA & IS OPERATION
@@ -745,62 +745,10 @@ while ($data = $sql->fetch_assoc()) {
 
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=CUSTOMER CARE';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">CUSTOMER CARE
-											</div>
-											<div class="row no-gutters align-items-center">
-												<div class="col-auto">
-													<div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">70%</div>
-												</div>
-												<div class="col">
-													<div class="progress progress-sm mr-2">
-														<div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-auto">
-											<i class="fas fa-chart-line fa-2x text-gray"></i>
-										</div>
-									</div>
-								</div>
-							</div>
-							</div>
-
-							<div class="col-xl-3 col-md-6 mb-4">
-							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
-									<div class="row no-gutters align-items-center">
-										<div class="col mr-2">
-											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">OPERATION BGES, WAN & WIFI
-											</div>
-											<div class="row no-gutters align-items-center">
-												<div class="col-auto">
-													<div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">30%</div>
-												</div>
-												<div class="col">
-													<div class="progress progress-sm mr-2">
-														<div class="progress-bar bg-info" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-auto">
-											<i class="fas fa-chart-line fa-2x text-gray"></i>
-										</div>
-									</div>
-								</div>
-							</div>
-							</div>
-
-							<div class="col-xl-3 col-md-6 mb-4">
-							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
-									<div class="row no-gutters align-items-center">
-										<div class="col mr-2">
-											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">ACCESS SERVICE OPERATION
 											</div>
 											<div class="row no-gutters align-items-center">
 												<div class="col-auto">
@@ -823,18 +771,70 @@ while ($data = $sql->fetch_assoc()) {
 
 							<div class="col-xl-3 col-md-6 mb-4">
 							<div class="card border-left-info shadow h-100 py-2">
-								<div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=OPERATION BGES, WAN, AND WIFI';" style="cursor: pointer;">
+									<div class="row no-gutters align-items-center">
+										<div class="col mr-2">
+											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">OPERATION BGES, WAN & WIFI
+											</div>
+											<div class="row no-gutters align-items-center">
+												<div class="col-auto">
+													<div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">80%</div>
+												</div>
+												<div class="col">
+													<div class="progress progress-sm mr-2">
+														<div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-auto">
+											<i class="fas fa-chart-line fa-2x text-gray"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+
+							<div class="col-xl-3 col-md-6 mb-4">
+							<div class="card border-left-info shadow h-100 py-2">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=ACCESS SERVICE OPERATION';" style="cursor: pointer;">
+									<div class="row no-gutters align-items-center">
+										<div class="col mr-2">
+											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">ACCESS SERVICE OPERATION
+											</div>
+											<div class="row no-gutters align-items-center">
+												<div class="col-auto">
+													<div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">40%</div>
+												</div>
+												<div class="col">
+													<div class="progress progress-sm mr-2">
+														<div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-auto">
+											<i class="fas fa-chart-line fa-2x text-gray"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+
+							<div class="col-xl-3 col-md-6 mb-4">
+							<div class="card border-left-info shadow h-100 py-2">
+								<div class="card-body" onclick="location.href='karyawan.php?unit=WARROOM';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">WARROOM
 											</div>
 											<div class="row no-gutters align-items-center">
 												<div class="col-auto">
-													<div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">10%</div>
+													<div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">20%</div>
 												</div>
 												<div class="col">
 													<div class="progress progress-sm mr-2">
-														<div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</div>
 											</div>

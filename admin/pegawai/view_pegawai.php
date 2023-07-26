@@ -20,7 +20,7 @@
 				<table class="table">
 					<tbody>
 						<tr>
-							<td style="width: 150px">
+							<td style="width: 200px">
 								<b>Nama Karyawan</b>
 							</td>
 							<td>:

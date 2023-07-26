@@ -8,7 +8,7 @@
 		<div class="table-responsive">
 			<div>
 				<a href="?page=add-pengguna" class="btn btn-primary">
-					<i class="fa fa-edit"></i> Tambah Data</a>
+					<i class="fa fa-edit"></i> Tambah User</a>
 			</div>
 			<br>
 			<table id="example1" class="table table-bordered table-striped">
@@ -18,6 +18,7 @@
 						<th>Nama User</th>
 						<th>Username</th>
 						<th>Level</th>
+						<th>Id Telegram</th>
 						<th>Aksi</th>
 					</tr>
 				</thead>
@@ -41,6 +42,9 @@
 						</td>
 						<td>
 							<?php echo $data['level']; ?>
+						</td>
+						<td>
+							<?php echo $data['id_telegram']; ?>
 						</td>
 						<td>
 							<a href="?page=edit-pengguna&kode=<?php echo $data['id_pengguna']; ?>" title="Ubah"
