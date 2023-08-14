@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Jul 2023 pada 06.32
+-- Waktu pembuatan: 08 Agu 2023 pada 03.27
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.1.17
 
@@ -112,17 +112,19 @@ CREATE TABLE `tb_pengguna` (
   `username` varchar(30) NOT NULL,
   `password` varchar(20) NOT NULL,
   `level` enum('Administrator','Sekretaris') NOT NULL,
-  `foto_user` varchar(255) NOT NULL
+  `foto_user` varchar(255) NOT NULL,
+  `kode_otp` int(255) NOT NULL,
+  `id_telegram` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data untuk tabel `tb_pengguna`
 --
 
-INSERT INTO `tb_pengguna` (`id_pengguna`, `nama_pengguna`, `username`, `password`, `level`, `foto_user`) VALUES
-(1, 'Angga Bayu', 'admin', '1', 'Administrator', ''),
-(2, 'Somat', 'sek', '1', 'Sekretaris', ''),
-(4, 'Sila', 'sila', '20', 'Administrator', '');
+INSERT INTO `tb_pengguna` (`id_pengguna`, `nama_pengguna`, `username`, `password`, `level`, `foto_user`, `kode_otp`, `id_telegram`) VALUES
+(1, 'Angga Bayu', 'admin', '1', 'Administrator', '', 78029, 0),
+(2, 'Somat', 'sek', '1', 'Sekretaris', '', 0, 0),
+(4, 'Sila', 'sila', '20', 'Administrator', '', 728740, 1326356946);
 
 -- --------------------------------------------------------
 
@@ -241,6 +243,80 @@ INSERT INTO `tb_resume` (`id`, `image`, `nama`, `pekerjaan`, `tanggal_lahir`, `a
 (53, '????\0JFIF\0\0\0\0\0\0??\0?\0		\Z\Z&\"\"&0-0>>T		\Z\Z&\"\"&0-0>>T??\0\0? \"\0??\0\0\0\0\0\0\0\0\0\0\0\0\0	\0??\0\0\0\0\0?i?$?J ?$?آ?????F?HaEE??H ??\"r\n????zP', 'Nursepma Rismawati', 'Karyawan PT. Telkom Jambi', '0000-00-00', 'Indonesia, Jambi', 'Nursepma@gmail.com', 2147483647, 'Primary school', 'Junior high school', 'Senior high school', 'Digital marketing specialist', 'Sales and marketing specialist', 'Marketing intern', 'Search engine optimization', 'Social media management', 'Web content writing'),
 (54, '????\0JFIF\0\0\0\0\0\0??\0?\0		\Z\Z&\"\"&0-0>>T		\Z\Z&\"\"&0-0>>T??\0\0? \"\0??\0\0\0\0\0\0\0\0\0\0\0\0\0	\0??\0\0\0\0\0?i?$?J ?$?آ?????F?HaEE??H ??\"r\n????zP', 'Qorira Retno Ardhini', 'Karyawan PT. Telkom Jmabi', '0000-00-00', 'Indonesia, Jambi', 'Qoriraretno@gmail.com', 2147483647, 'Primary school', 'Junior high school', 'Senior high school', 'Digital marketing specialist', 'Sales and marketing specialist', 'Marketing intern', 'Search engine optimization', 'Social media management', 'Web content writing');
 
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tb_unit`
+--
+
+CREATE TABLE `tb_unit` (
+  `id` int(255) NOT NULL,
+  `nama_karyawan` varchar(255) NOT NULL,
+  `posisi` varchar(255) NOT NULL,
+  `unit` varchar(255) NOT NULL,
+  `foto` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `tb_unit`
+--
+
+INSERT INTO `tb_unit` (`id`, `nama_karyawan`, `posisi`, `unit`, `foto`) VALUES
+(1, 'ABDUL RAHMAN', 'MANAGER SHARED SERVICE', 'SHARED SERVICE OPERATION', 'user (1).png'),
+(2, 'ANGGA BAYU HARYANTO', 'OFF 3 HUMAN CAPITAL & CDC', 'SHARED SERVICE OPERATION', 'user (1).png'),
+(3, 'INDRA MARTINUS', 'SENIOR STAFF REHIRE FINANCE', 'SHARED SERVICE OPERATION', 'user (1).png'),
+(4, 'SITI RAMDHIANTY', 'OFF 3 PAYMENT COLLECTION & CONSUMER', 'SHARED SERVICE OPERATION', 'women.png'),
+(5, 'HABIBILAH', 'ADMIN CDC II', 'SHARED SERVICE OPERATION', 'user (1).png'),
+(6, 'MONICA NOPRIANTY', 'ADMIN CDC II', 'SHARED SERVICE OPERATION', 'women.png'),
+(7, 'FAISAL WAHYU DHARMAWAN', 'CARING TERRITORY BASED', 'SHARED SERVICE OPERATION', 'user (1).png'),
+(8, 'M. FURMAWANTO WARDANI', 'CARING TERRITORY BASED', 'SHARED SERVICE OPERATION', 'user (1).png'),
+(9, 'MUHAMMAD EGA SYAHPUTRA', 'CARING TERRITORY BASED', 'SHARED SERVICE OPERATION', 'user (1).png'),
+(10, 'RAHMAT FITRAH. R', 'CARING TERRITORY BASED', 'SHARED SERVICE OPERATION', 'user (1).png'),
+(11, 'TAUFIK RIDHO AS SIDDIQI', 'HELPDESK', 'SHARED SERVICE OPERATION', 'user (1).png'),
+(12, 'FATHINAH QADIRIYAH', 'HELPDESK', 'SHARED SERVICE OPERATION', 'women.png'),
+(13, 'ADELIA PUTRI PRATIWI', 'OFF 3 DIGITAL & WIFI SERVICE', 'CONSUMER SERVICE', 'women.png'),
+(14, 'CORRY SUTRISNA', 'OFF 3 HOME SERVICE', 'CONSUMER SERVICE', 'women.png'),
+(15, 'SARI NOVIYENI', 'CANVASSER WMS', 'CONSUMER SERVICE', 'women.png'),
+(16, 'MUHAMMAD FITRA', 'ACCOUNT MANAGER', 'CONSUMER SERVICE', 'user (1).png'),
+(17, 'ALDAFI SALSABILLAH', 'OFF 3 LOGISTIK', 'LOGISTIK AND GENERAL SUPPORT', 'user (1).png'),
+(18, 'M. RIDWAN', 'MANAGER LOGISTIK & GENERAL SUPPORT', 'LOGISTIK AND GENERAL SUPPORT', 'user (1).png'),
+(19, 'ANDI SYAPUTRA ', 'MANAGER ACCESS OPTIMA DATA & MAINTENANCE', 'ACCESS, OPTIMA, DATA, AND MAINTENANCE', 'user (1).png'),
+(20, 'RIZVALDO RIVAI', 'OFF 3 ACCESS MAINTENANCE & QE', 'ACCESS, OPTIMA, DATA, AND MAINTENANCE', 'user (1).png'),
+(21, 'DEDI ARIANSYAH', 'ADMIN', 'ACCESS, OPTIMA, DATA, AND MAINTENANCE', 'user (1).png'),
+(22, 'IMAN FAJAR MAULANA', 'TEKNISI', 'ACCESS, OPTIMA, DATA, AND MAINTENANCE', 'user (1).png'),
+(23, 'INDRA ISKANDAR MUDA', 'TEAM LEADER', 'ACCESS, OPTIMA, DATA, AND MAINTENANCE', 'user (1).png'),
+(24, 'KEFIN PUTRA YANDITO', 'ADMIN', 'ACCESS, OPTIMA, DATA, AND MAINTENANCE', 'user (1).png'),
+(25, 'ARIFAN KESUMA PUTRA', 'HEAD OF REPRESENTATIVE OFFICE (HERO) MUARA BUNGO', 'HEAD OF REPRESENTATIVE OFFICE', 'user (1).png'),
+(26, 'EZRA MELIORA NAINGGOLAN', 'HEAD OF REPRESENTATIVE OFFICE (HERO) KOTA BARU', 'HEAD OF REPRESENTATIVE OFFICE', 'women.png'),
+(27, 'M. RENDY', 'HEAD OF REPRESENTATIVE OFFICE (HERO) SUNGAI PENUH', 'HEAD OF REPRESENTATIVE OFFICE', 'user (1).png'),
+(28, 'MOHAMMAD YASIN RAMADHAN', 'HEAD OF REPRESENTATIVE OFFICE (HERO) MANDALO', 'HEAD OF REPRESENTATIVE OFFICE', 'user (1).png'),
+(29, 'ARUQMAANA RASYID', 'ACCOUNT MANAGER I', 'BUSINESS, GOVT, AND ENTERPRISE SERVICE', 'women.png'),
+(30, 'ILHAM DWI KUSUMA', 'ACCOUNT MANAGER 2', 'BUSINESS, GOVT, AND ENTERPRISE SERVICE', 'user (1).png'),
+(31, 'IWAN SITOHANG', 'ACCOUNT MANAGER 1', 'BUSINESS, GOVT, AND ENTERPRISE SERVICE', 'user (1).png'),
+(32, 'RIYANDHANI', 'MANAGER BUSINESS, GOVERMENT AND ENTERPRISE SERVICE', 'BUSINESS, GOVT, AND ENTERPRISE SERVICE', 'user (1).png'),
+(33, 'DEDDY SAPUTRA', 'ADMIN', 'BUSINESS, GOVT, AND ENTERPRISE SERVICE', 'user (1).png'),
+(34, 'FADLI SETIAWAN', 'ADMIN', 'BUSINESS, GOVT, AND ENTERPRISE SERVICE', 'user (1).png'),
+(35, 'I GEDE MERTHA', 'ADMIN', 'BUSINESS, GOVT, AND ENTERPRISE SERVICE', 'user (1).png'),
+(36, 'JERI', 'AMEX', 'BUSINESS, GOVT, AND ENTERPRISE SERVICE', 'user (1).png'),
+(37, 'JIMMY BANI SUSANTO', 'AMEX', 'BUSINESS, GOVT, AND ENTERPRISE SERVICE', 'user (1).png'),
+(38, 'MARDONI', 'ACCOUNT MANAGER', 'BUSINESS, GOVT, AND ENTERPRISE SERVICE', 'user (1).png'),
+(39, 'FADHILLAH RISKA', 'SALES', 'BUSINESS, GOVT, AND ENTERPRISE SERVICE', 'women.png'),
+(40, 'IGA SUCI KANDELA', 'ACCOUNT MANAGER', 'BUSINESS, GOVT, AND ENTERPRISE SERVICE', 'women.png'),
+(41, 'EDY FAISAL', 'SENIOR STAFF REHIRE WITEL OPERATION CENTER', 'ENGINE GROUP', 'user (1).png'),
+(42, 'FAHMI ISKANDAR LUBIS', 'MANAGER NETWORK AREA & IS OPERATION', 'NETWORK AREA AND IS OPERATION', 'user (1).png'),
+(43, 'RENAL FRANATA', 'ASMAN DATA CENTER & DEFA', 'NETWORK AREA AND IS OPERATION', 'user (1).png'),
+(44, 'MARIA ULPAH', 'TEKNISI', 'NETWORK AREA AND IS OPERATION', 'women.png'),
+(45, 'HASNUL ARIF RANGKUTI, M.Si', 'GENERAL MANAGER WITEL JAMBI', 'GM WITEL JAMBI', 'user (1).png'),
+(46, 'HASRIL EFFENDI', 'KAKANDATEL MUARA BUNGO', 'KAKANDATEL', 'user (1).png'),
+(47, 'HERDIN SURYA DWI PUTRA', 'OFF 3 CUSTOMER CARE', 'CUSTOMER CARE', 'user (1).png'),
+(48, 'MITA PUSPASARI', 'JM CUSTOMER CARE', 'CUSTOMER CARE', 'women.png'),
+(49, 'ARIF GILANG SURYA HARAHAP', 'HELPDESK', 'CUSTOMER CARE', 'user (1).png'),
+(50, 'DHINI MARDIA', 'HELPDESK', 'CUSTOMER CARE', 'women.png'),
+(51, 'MAULANA HIZBULLAH', 'OFF 3 BGES & WIFI FULFILLMENT & ASSURANCE', 'OPERATION BGES, WAN, AND WIFI', 'user (1).png'),
+(52, 'MUHAMMAD SYIFA A HADI', 'OFF 3 WAN FULFILLMENT & ASSURANCE', 'OPERATION BGES, WAN, AND WIFI', 'user (1).png'),
+(53, 'NURSEPMA RISMAWATI', 'OFF 3 FULFILLMENT', 'ACCESS SERVICE OPERATION', 'women.png'),
+(54, 'QORIRA RETNO ARDHINI', 'OFF 2 COMMAND CONTROL', 'WARROOM', 'women.png');
+
 --
 -- Indexes for dumped tables
 --
@@ -270,6 +346,12 @@ ALTER TABLE `tb_resume`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `tb_unit`
+--
+ALTER TABLE `tb_unit`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
@@ -277,13 +359,13 @@ ALTER TABLE `tb_resume`
 -- AUTO_INCREMENT untuk tabel `tb_pegawai`
 --
 ALTER TABLE `tb_pegawai`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_pengguna`
 --
 ALTER TABLE `tb_pengguna`
-  MODIFY `id_pengguna` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_pengguna` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_profil`
@@ -295,6 +377,12 @@ ALTER TABLE `tb_profil`
 -- AUTO_INCREMENT untuk tabel `tb_resume`
 --
 ALTER TABLE `tb_resume`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+
+--
+-- AUTO_INCREMENT untuk tabel `tb_unit`
+--
+ALTER TABLE `tb_unit`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 COMMIT;
 
