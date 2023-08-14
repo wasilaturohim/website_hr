@@ -209,10 +209,9 @@ if (isset($_GET["unit"])) {
 
 
                                 ?>
-                                    <!-- Earnings (Monthly) Card Example -->
                                     <div class="col-xl-6 col-md-6 mb-4">
                                         <div class="card border-left-info shadow h-100 py-2">
-                                            <div class="card-body" data-toggle="modal" data-target="#modalDetail">
+                                            <div class="card-body" onclick="location.href='profil_karyawan.php?kode=<?php echo $data['nama_karyawan']; ?>';" style="cursor: pointer;">
                                                 <div class="row no-gutters align-items-center">
                                                     <div class="employee-image mr-5 justify-content-center">
                                                         <img src="foto/<?php echo $data['foto']; ?>" width="50px" style="text-align: left;" />
@@ -239,42 +238,6 @@ if (isset($_GET["unit"])) {
                                 ?>
                             </div>
                             <!-- /.row -->
-
-                            <!-- Modal Detail -->
-                            <div class="modal fade" id="modalDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Detail Karyawan</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h3>Nama Karyawan</h3>
-                                            <div class="progress mt-3">
-                                                <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <h3>Nama Karyawan</h3>
-                                            <div class="progress mt-3">
-                                                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <h3>Nama Karyawan</h3>
-                                            <div class="progress mt-3">
-                                                <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <h3>Nama Karyawan</h3>
-                                            <div class="progress mt-3">
-                                                <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.modal -->
 
                         </div>
                         <!-- /.card-body -->

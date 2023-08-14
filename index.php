@@ -70,7 +70,7 @@
 
 				<li class="nav-item d-none d-sm-inline-block">
 					<a href="index.php" class="nav-link">
-						<font color="black">
+						<font color="gray">
 							<b>
 								<?php echo $nama; ?>
 							</b>
@@ -83,7 +83,7 @@
 		<!-- /.navbar -->
 
 		<!-- Main Sidebar Container -->
-		<aside class="main-sidebar sidebar-light-primary elevation-4">
+		<aside class="main-sidebar sidebar-light-red elevation-4">
 			<!-- Brand Logo -->
 			<a href="index.php" class="brand-link">
 				<img src="https://www.telkom.co.id/data/image_upload/page/1594112895830_compress_PNG%20Icon%20Telkom.png" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
@@ -117,7 +117,7 @@
 						?>
 						<li class="nav-item">
 							<a href="index.php" class="nav-link">
-								<i class="nav-icon fas fa-tachometer-alt text-primary"></i>
+								<i class="nav-icon fas fa-tachometer-alt text-red"></i>
 								<p>
 									Dashboard
 								</p>
@@ -127,15 +127,15 @@
 
 						<li class="nav-item">
 							<a href="?page=data-pegawai" class="nav-link">
-								<i class="nav-icon far fa fa-users text-primary"></i>
+								<i class="nav-icon far fa fa-users text-red"></i>
 								<p>
 									Database Karyawan
 								</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">
-								<i class="nav-icon far fa fa-laptop text-primary"></i>
+							<a href="https://noblesse.one/moodle/" class="nav-link">
+								<i class="nav-icon far fa fa-laptop text-red"></i>
 								<p>
 									E-Learning
 								</p>
@@ -145,7 +145,7 @@
 						<li class="nav-header">Setting</li>
 						<li class="nav-item">
 							<a href="?page=data-profil" class="nav-link">
-								<i class="nav-icon far fa fa-flag text-primary"></i>
+								<i class="nav-icon far fa fa-flag text-red"></i>
 								<p>
 									Profil Perusahaan
 								</p>
@@ -154,7 +154,7 @@
 
 						<li class="nav-item">
 							<a href="?page=data-pengguna" class="nav-link">
-								<i class="nav-icon far fa-user text-primary"></i>
+								<i class="nav-icon far fa-user text-red"></i>
 								<p>
 									Pengguna Sistem
 								</p>
@@ -191,7 +191,7 @@
 
 						<li class="nav-item">
 							<a onclick="return confirm('Apakah anda yakin akan keluar ?')" href="logout.php" class="nav-link">
-								<i class="nav-icon fas fa-sign-out-alt fa-sm fa-fw mr-2 text-danger"></i>
+								<i class="nav-icon fas fa-sign-out-alt fa-sm fa-fw mr-2 text-grey"></i>
 								<p>
 									Logout
 								</p>

@@ -13,7 +13,7 @@
 		</div><!-- /.row -->
 	</div><!-- /.container-fluid -->
 </div>
-<div class="card card-info">
+<div class="card card-gray">
 	<div class="card-header">
 		<h3 class="card-title">
 			<i class="fa fa-table"></i> Data Karyawan</h3>

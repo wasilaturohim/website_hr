@@ -188,7 +188,7 @@ while ($data = $sql->fetch_assoc()) {
 								<div class="card-body" onclick="location.href='karyawan.php?unit=SHARED SERVICE OPERATION';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
-											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">SHARED SERVICE OPERATION
+											<div class="text-xs font-weight-bold text-black text-uppercase mb-1">SHARED SERVICE OPERATION
 											</div>
 											<div class="row no-gutters align-items-center">
 												<div class="col-auto">
@@ -196,13 +196,13 @@ while ($data = $sql->fetch_assoc()) {
 												</div>
 												<div class="col">
 													<div class="progress progress-sm mr-2">
-														<div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="col-auto">
-											<i class="fas fa-chart-line fa-2x text-gray"></i>
+											<i class="fas fa-chart-line fa-2x text-info"></i>
 										</div>
 									</div>
 								</div>
@@ -215,7 +215,7 @@ while ($data = $sql->fetch_assoc()) {
 								<div class="card-body" onclick="location.href='karyawan.php?unit=CONSUMER SERVICE';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
-											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">CONSUMER SERVICE
+											<div class="text-xs font-weight-bold text-black text-uppercase mb-1">CONSUMER SERVICE
 											</div>
 											<div class="row no-gutters align-items-center">
 												<div class="col-auto">
@@ -223,13 +223,13 @@ while ($data = $sql->fetch_assoc()) {
 												</div>
 												<div class="col">
 													<div class="progress progress-sm mr-2">
-														<div class="progress-bar bg-info" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="col-auto">
-											<i class="fas fa-chart-line fa-2x text-gray"></i>
+											<i class="fas fa-chart-line fa-2x text-info"></i>
 										</div>
 									</div>
 								</div>
@@ -242,7 +242,7 @@ while ($data = $sql->fetch_assoc()) {
 								<div class="card-body" onclick="location.href='karyawan.php?unit=LOGISTIK AND GENERAL SUPPORT';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
-											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">LOGISTIK & GENERAL SUPPORT
+											<div class="text-xs font-weight-bold text-black text-uppercase mb-1">LOGISTIK & GENERAL SUPPORT
 											</div>
 											<div class="row no-gutters align-items-center">
 												<div class="col-auto">
@@ -250,13 +250,13 @@ while ($data = $sql->fetch_assoc()) {
 												</div>
 												<div class="col">
 													<div class="progress progress-sm mr-2">
-														<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="col-auto">
-											<i class="fas fa-chart-line fa-2x text-gray"></i>
+											<i class="fas fa-chart-line fa-2x text-info"></i>
 										</div>
 									</div>
 								</div>
@@ -269,7 +269,7 @@ while ($data = $sql->fetch_assoc()) {
 								<div class="card-body" onclick="location.href='karyawan.php?unit=ACCESS, OPTIMA, DATA, AND MAINTENANCE';" style="cursor: pointer;">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
-											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">ACCESS, OPTIMA, DATA & MAINTENANCE
+											<div class="text-xs font-weight-bold text-black text-uppercase mb-1">ACCESS, OPTIMA, DATA & MAINTENANCE
 											</div>
 											<div class="row no-gutters align-items-center">
 												<div class="col-auto">
@@ -277,13 +277,13 @@ while ($data = $sql->fetch_assoc()) {
 												</div>
 												<div class="col">
 													<div class="progress progress-sm mr-2">
-														<div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="col-auto">
-											<i class="fas fa-chart-line fa-2x text-gray"></i>
+											<i class="fas fa-chart-line fa-2x text-info"></i>
 										</div>
 									</div>
 								</div>
@@ -303,7 +303,7 @@ while ($data = $sql->fetch_assoc()) {
 												</div>
 												<div class="col">
 													<div class="progress progress-sm mr-2">
-														<div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</div>
 											</div>
@@ -329,7 +329,7 @@ while ($data = $sql->fetch_assoc()) {
 												</div>
 												<div class="col">
 													<div class="progress progress-sm mr-2">
-														<div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</div>
 											</div>
@@ -355,7 +355,7 @@ while ($data = $sql->fetch_assoc()) {
 												</div>
 												<div class="col">
 													<div class="progress progress-sm mr-2">
-														<div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</div>
 											</div>
@@ -381,7 +381,7 @@ while ($data = $sql->fetch_assoc()) {
 												</div>
 												<div class="col">
 													<div class="progress progress-sm mr-2">
-														<div class="progress-bar bg-info" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</div>
 											</div>
@@ -407,7 +407,7 @@ while ($data = $sql->fetch_assoc()) {
 												</div>
 												<div class="col">
 													<div class="progress progress-sm mr-2">
-														<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</div>
 											</div>
@@ -433,7 +433,7 @@ while ($data = $sql->fetch_assoc()) {
 												</div>
 												<div class="col">
 													<div class="progress progress-sm mr-2">
-														<div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</div>
 											</div>
@@ -459,7 +459,7 @@ while ($data = $sql->fetch_assoc()) {
 												</div>
 												<div class="col">
 													<div class="progress progress-sm mr-2">
-														<div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</div>
 											</div>
@@ -485,7 +485,7 @@ while ($data = $sql->fetch_assoc()) {
 												</div>
 												<div class="col">
 													<div class="progress progress-sm mr-2">
-														<div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</div>
 											</div>
