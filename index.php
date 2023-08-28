@@ -59,7 +59,7 @@
 			<ul class="navbar-nav">
 				<li class="nav-item">
 					<a class="nav-link" data-widget="pushmenu" href="#">
-						<i class="fas fa-bars text-black"></i>
+						<i class="fas fa-bars text-red"></i>
 					</a>
 				</li>
 
@@ -70,7 +70,7 @@
 
 				<li class="nav-item d-none d-sm-inline-block">
 					<a href="index.php" class="nav-link">
-						<font color="gray">
+						<font color="black">
 							<b>
 								<?php echo $nama; ?>
 							</b>
@@ -134,6 +134,14 @@
 							</a>
 						</li>
 						<li class="nav-item">
+							<a href="?page=filter-pegawai" class="nav-link">
+								<i class="nav-icon far fa fa-list text-red"></i>
+								<p>
+									Filter Karyawan
+								</p>
+							</a>
+						</li>
+						<li class="nav-item">
 							<a href="https://noblesse.one/moodle/" class="nav-link">
 								<i class="nav-icon far fa fa-laptop text-red"></i>
 								<p>
@@ -151,10 +159,18 @@
 								</p>
 							</a>
 						</li>
+						<li class="nav-item">
+							<a href="?page=struktur-organisasi" class="nav-link">
+								<i class="nav-icon far fa fa-sitemap text-red"></i>
+								<p>
+									Struktur Organisasi
+								</p>
+							</a>
+						</li>
 
 						<li class="nav-item">
 							<a href="?page=data-pengguna" class="nav-link">
-								<i class="nav-icon far fa-user text-red"></i>
+								<i class="nav-icon far fa fa-user text-red"></i>
 								<p>
 									Pengguna Sistem
 								</p>
@@ -167,18 +183,25 @@
 
 						<li class="nav-item">
 							<a href="index.php" class="nav-link">
-								<i class="nav-icon fas fa-tachometer-alt text-primary"></i>
+								<i class="nav-icon fas fa-tachometer-alt text-red"></i>
 								<p>
 									Dashboard
 								</p>
 							</a>
 						</li>
-
 						<li class="nav-item">
-							<a href="?page=data-pegawai" class="nav-link">
-								<i class="nav-icon far fa fa-users text-primary"></i>
+							<a href="https://noblesse.one/moodle/" class="nav-link">
+								<i class="nav-icon far fa fa-laptop text-red"></i>
 								<p>
-									Data Pegawai
+									E-Learning
+								</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=struktur-organisasi" class="nav-link">
+								<i class="nav-icon far fa fa-sitemap text-red"></i>
+								<p>
+									Struktur Organisasi
 								</p>
 							</a>
 						</li>
@@ -258,6 +281,9 @@
 				case 'view-pegawai':
 					include "admin/pegawai/view_pegawai.php";
 					break;
+				case 'filter-pegawai':
+					include "admin/pegawai/filterpegawai.php";
+					break;
 
 				//Profil
 				case 'data-profil':
@@ -265,6 +291,11 @@
 					break;
 				case 'edit-profil':
 					include "admin/profil/edit_profil.php";
+					break;
+
+				//struktur organisasi
+				case 'struktur-organisasi':
+					include "struktur_organisasi.php";
 					break;
 
 			

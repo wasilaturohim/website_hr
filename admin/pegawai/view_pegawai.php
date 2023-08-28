@@ -86,7 +86,7 @@
 					</tbody>
 				</table>
 				<div class="card-footer">
-					<a href="?page=data-pegawai" class="btn btn-warning">Kembali</a>
+					<a href="?page=data-pegawai" class="btn btn-danger">Kembali</a>
 
 					<a href="./report/cetak-pegawai.php?nip=<?php echo $data_cek['Nama_Karyawan']; ?>" target=" _blank"
 					 title="Cetak Data Pegawai" class="btn btn-primary">Print</a>
@@ -96,7 +96,7 @@
 	</div>
 
 	<div class="col-md-4">
-		<div class="card card-success">
+		<div class="card card-gray">
 			<div class="card-header">
 				<center>
 					<h3 class="card-title">

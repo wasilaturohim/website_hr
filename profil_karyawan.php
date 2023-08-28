@@ -41,6 +41,20 @@ if (isset($_GET['kode'])) {
 } else {
     echo "Karyawan tidak valid.";
 }
+// ... (existing code)
+
+// Retrieve pendapatan value from tb_pegawai
+$sql = $koneksi->query("SELECT pendapatan FROM tb_pegawai WHERE nama_karyawan = '$nama_karyawan'");
+$data = $sql->fetch_assoc();
+$pendapatan = $data['pendapatan'];
+
+// Calculate achievement percentage
+$target = 50000000; // Target pendapatan
+$achievementPercentage = ($pendapatan / $target) * 100;
+$achievementPercentage = min($achievementPercentage, 100); // Cap at 100%
+
+// ... (existing code)
+
 ?>
 
 <!DOCTYPE html>
@@ -134,7 +148,7 @@ if (isset($_GET['kode'])) {
                         <li class="nav-header">MENU</li>
                         <li class="nav-item">
                             <a href="index.php" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                                <i class="nav-icon fas fa-th text-red"></i>
                                 <p>
                                     Dashboard
                                 </p>
@@ -184,10 +198,8 @@ if (isset($_GET['kode'])) {
                                         <img src="foto/<?php echo $foto; ?>" width="80px" style="text-align: left;" />
                                     </div>
                                     <div class="col mr-2">
-                                        <div class="h6 mb-0 font-weight-bold text-gray-800 text-uppercase"> <?php echo $nama_karyawan; ?>
-                                        </div>
-                                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1"> <?php echo $posisi; ?>
-                                        </div>
+                                        <div class="h6 mb-0 font-weight-bold text-gray-800 text-uppercase"><?= $nama_karyawan ?></div>
+                                        <div class="text-xs font-weight-bold text-red text-uppercase mb-1"><?= $posisi ?></div>
                                         <div class="progress mt-3">
                                             <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
@@ -195,6 +207,7 @@ if (isset($_GET['kode'])) {
                                     <div class="col-auto">
                                         <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">75%</div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -213,13 +226,20 @@ if (isset($_GET['kode'])) {
                         <!-- Project Card Example -->
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
+                                <h6 class="m-0 font-weight-bold text-red">Projects</h6>
                             </div>
+
                             <div class="card-body">
-                                <h4 class="small font-weight-bold">Revenue <span class="float-right">20%</span></h4>
+                                <!-- ... (existing code) -->
+
+                                <h4 class="small font-weight-bold">Revenue<span class="float-right"><?php echo number_format($achievementPercentage, 2); ?>%</span></h4>
                                 <div class="progress mb-4">
-                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-success" role="progressbar" style="width:  <?php echo $achievementPercentage; ?>%" aria-valuenow="<?php echo $achievementPercentage; ?> " aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
+
+                                <!-- ... (existing code) -->
+
+
                                 <h4 class="small font-weight-bold">Sales Tracking <span class="float-right">40%</span></h4>
                                 <div class="progress mb-4">
                                     <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
@@ -240,17 +260,17 @@ if (isset($_GET['kode'])) {
                         </div>
 
                         <!-- Area Chart -->
-                    
+
 
                         <!-- Bar Chart -->
-    
+
                     </div>
 
                     <!-- Donut Chart -->
                     <div class="col-xl-6 col-lg-6">
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Area Chart</h6>
+                                <h6 class="m-0 font-weight-bold text-red">Area Chart</h6>
                             </div>
                             <div class="card-body">
                                 <div class="chart-area">

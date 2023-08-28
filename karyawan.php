@@ -85,7 +85,7 @@ if (isset($_GET["unit"])) {
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#">
-                        <i class="fas fa-bars text-black"></i>
+                        <i class="fas fa-bars text-red"></i>
                     </a>
                 </li>
 
@@ -141,7 +141,7 @@ if (isset($_GET["unit"])) {
                         <li class="nav-header">MENU</li>
                         <li class="nav-item">
                             <a href="index.php" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                                <i class="nav-icon fas fa-th text-red"></i>
                                 <p>
                                     Dashboard
                                 </p>
@@ -219,7 +219,7 @@ if (isset($_GET["unit"])) {
                                                     <div class="col mr-2">
                                                         <div class="h6 mb-0 font-weight-bold text-gray-800 text-uppercase"> <?php echo $data['nama_karyawan']; ?>
                                                         </div>
-                                                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1"> <?php echo $data['posisi']; ?>
+                                                        <div class="text-xs font-weight-bold text-red text-uppercase mb-1"> <?php echo $data['posisi']; ?>
                                                         </div>
                                                         <div class="progress mt-3">
                                                             <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>

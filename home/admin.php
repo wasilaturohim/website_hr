@@ -35,7 +35,7 @@
         <div class="card-body" onclick="location.href='performance.php';" style="cursor: pointer;">
             <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                    <div class="text-xs font-weight-bold text-red text-uppercase mb-1">
                         Performance Unit
                     </div>
                     <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 500.000.000,00</div>
@@ -55,9 +55,9 @@
 			<div class="card-body">
 				<div class="row no-gutters align-items-center">
 					<div class="col mr-2">
-						<div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+						<div class="text-xs font-weight-bold text-red text-uppercase mb-1">
 							Behavior</div>
-						<div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $total;  ?></div>
+						<div class="h5 mb-0 font-weight-bold text-gray-800">80%</div>
 					</div>
 					<div class="col-auto">
 						<i class="fas fa-user fa-2x text-gray"></i>
@@ -74,7 +74,7 @@
 			<div class="card-body">
 				<div class="row no-gutters align-items-center">
 					<div class="col mr-2">
-						<div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
+						<div class="text-xs font-weight-bold text-red text-uppercase mb-1">Tasks
 						</div>
 						<div class="row no-gutters align-items-center">
 							<div class="col-auto">
@@ -101,12 +101,12 @@
 			<div class="card-body">
 				<div class="row no-gutters align-items-center">
 					<div class="col mr-2">
-						<div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-							Medical</div>
-						<div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+						<div class="text-xs font-weight-bold text-red text-uppercase mb-1">
+							Attendance</div>
+						<div class="h5 mb-0 font-weight-bold text-gray-500"></div>
 					</div>
 					<div class="col-auto">
-						<i class="fas fa-briefcase-medical fa-2x text-gray"></i>
+						<i class="fas fa-clipboard fa-2x text-gray"></i>
 					</div>
 				</div>
 			</div>

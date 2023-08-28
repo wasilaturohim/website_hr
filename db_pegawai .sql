@@ -111,7 +111,7 @@ CREATE TABLE `tb_pengguna` (
   `nama_pengguna` varchar(30) NOT NULL,
   `username` varchar(30) NOT NULL,
   `password` varchar(20) NOT NULL,
-  `level` enum('Administrator','Sekretaris') NOT NULL,
+  `level` enum('Administrator','Karyawan') NOT NULL,
   `foto_user` varchar(255) NOT NULL,
   `kode_otp` int(255) NOT NULL,
   `id_telegram` int(255) NOT NULL
@@ -123,7 +123,7 @@ CREATE TABLE `tb_pengguna` (
 
 INSERT INTO `tb_pengguna` (`id_pengguna`, `nama_pengguna`, `username`, `password`, `level`, `foto_user`, `kode_otp`, `id_telegram`) VALUES
 (1, 'Angga Bayu', 'admin', '1', 'Administrator', '', 78029, 0),
-(2, 'Somat', 'sek', '1', 'Sekretaris', '', 0, 0),
+(2, 'Somat', 'sek', '1', 'Karyawan', '', 0, 0),
 (4, 'Sila', 'sila', '20', 'Administrator', '', 728740, 1326356946);
 
 -- --------------------------------------------------------
